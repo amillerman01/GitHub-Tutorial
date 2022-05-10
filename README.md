@@ -1,13 +1,6 @@
 # GitHub Tutorial
 For all your github learning needs
 
-# HEY YOU!
-If you see this message, welcome to the commit history! 
-I'm putting a line of javascript in here that I'll be using when I write this document, to make it easier to populate the table of contents
-
-https://jsfiddle.net/mb62f8h5/27/
-
-
 # Before beginning
 
 - Be sure to mention relevent experience you have with github in industry, highlighting the important of using a version control software throughout, giving reasons why each part is useful and how in day to day work as a developer.
