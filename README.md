@@ -20,11 +20,12 @@ For all your github learning needs
 ## Extra Items
 1. [Making commits directly on github.com](#making-commits-directly-on-githubcom)
 2. [Inviting people to collaborate](#inviting-people-to-collaborate)
-3. [Repository settings](#repository-settings)
-4. [Creating pull requests](#creating-pull-requests)
-5. [Deployment](#deployment)
-6. [GitBash](#gitbash)
-7. [Github and VSCode](#github-and-vscode)
+3. [.gitignore file](#gitignore-file)
+4. [Repository settings](#repository-settings)
+5. [Creating pull requests](#creating-pull-requests)
+6. [Deployment](#deployment)
+7. [GitBash](#gitbash)
+8. [Github and VSCode](#github-and-vscode)
 
 # The Basics
 
@@ -89,6 +90,9 @@ For all your github learning needs
 - make a few more commits and then view history on github desktop and github.com
 - draw attention to time stamps, files changes, different views for commit history on github.com, etc
 - also emphasize that code is never lost, you can always recover things in the github commit history
+- you can also undo commits based on the commit history
+  - show how through github desktop
+
 ## Making and publishing branches
 
 - Make a branch off main
@@ -121,6 +125,11 @@ For all your github learning needs
   - private repos protect them from potential academic integrity issues coming up later
   - You need to accept invites once they invite you, can be done later
 - Discuss permission possibilities and how awesome it is that you can invite collaborators for projects in industry
+
+## .gitignore file
+
+- Important file to make only the files you want are added to your repository
+- Minimizes how many files get pushed to github, especially external libraries and files generated when executing your 
 
 ## Repository settings
 
