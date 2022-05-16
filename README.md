@@ -26,9 +26,10 @@ You will need an account on [GitHub](https://github.com) in order to participate
   - [2.6. Deployment](#26-deployment)
   - [2.7. GitBash](#27-gitbash)
   - [2.8. Github and VSCode](#28-github-and-vscode)
-- [Glossary of terms](#glossary-of-terms)
-  - [Repository](#repository)
-  - [Commit](#commit)
+  - [2.9. Cleaning out sensitive file data](#29-cleaning-out-sensitive-file-data)
+- [3. Glossary of terms](#3-glossary-of-terms)
+  - [3.1. Repository](#31-repository)
+  - [3.2. Commit](#32-commit)
 
 # 1. The Basics
 
@@ -44,6 +45,8 @@ At its most basic level, GitHub gives you the tools to:
 - Collaborate with others on the same codebase without having to continuously send each other individual files to be manually updated
 - Help make sure nobody's code changes are lost when you're collaborating on a project together, especially when multiple people are working on the same files at the same time
 
+You can find more info [here](https://kinsta.com/knowledgebase/what-is-github/).
+
 ## 1.2. What you'll need to get started
 
 There are many ways you can interact with your GitHub repositories, including through the terminal, through your code editor, or using a separate GUI program. In this tutorial, we're going to focus on that last option, in the form of [GitHub Desktop](https://desktop.github.com/). Visit that link and download the program for your computers operating system.
@@ -58,17 +61,22 @@ You can make repositories either directly on github.com or in the GitHub Desktop
 
 It's important to note that once you make a repository on your computer (or [clone one](#14-cloning-your-repository)), GitHub Desktop is essentially watching for changes you make to any files inside of the folder that contains your repository. It knows to watch for changes in this folder because of a hidden item called the .git folder. Any files you add, change or remove will be determined to be changes to the repository. What you do with those changes is something discussed in the [Making your first Commit](#16-making-your-first-commit) section.
 
+For more info, see the official documentation from GitHub [here](https://docs.github.com/en/get-started/quickstart/create-a-repo), or documentation on doing it specifically through GitHub Desktop [here](https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/overview/creating-your-first-repository-using-github-desktop)
+
 ## 1.4. Cloning your repository
 
 If you want to work on a repository on your computer that you didn't create from your computer, you need to clone that repository. Cloning allows you to make a local copy of the repository on your computer (we'll talk about local copies of repositories in the next section). Once you have a local copy on your computer, you can change the code on your local copy, and as long as you have permissions set on the repository you can publish your changes up to the repository on github itself.
 
-You can find the steps to clone a repository [here](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/adding-and-cloning-repositories/cloning-and-forking-repositories-from-github-desktop#cloning-a-repository).
+You can find the steps to clone a repository to GitHub Desktop [here](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/adding-and-cloning-repositories/cloning-and-forking-repositories-from-github-desktop#cloning-a-repository).
+
 
 ## 1.5. Local vs origin
 
 When you're working with your GitHub repository code on your computer, there are always at least 2 copies of that repository: One is the copy on the GitHub servers themselves, on the cloud (known as **origin** or remote). The other copy is the local repository on your computer. 
 
 When you make changes (aka **commits**) to your code using GitHub Desktop, you are updating the local repository code. Those changes will not make it to the remote copy of the repository until you **push** those changes to origin. That means that if you are collaborating with someone on a repository, they will not be able to receive your changes to the code until you push that code up. Once you do push the code, it will be sent to the GitHub servers, and you'll be able to see the changes on your repository on [github.com](https://github.com).
+
+For more info, see the official documentation from Git [here](https://git-scm.com/book/en/v2/Git-Branching-Remote-Branches).
 
 ## 1.6. Making your first commit
 
@@ -80,6 +88,8 @@ These changes are not part of your local repository history, until you have comm
 
 Committing your changes only updates the local copy of your repository. It does not update the code on GitHub's servers. In order for your committed changes to be added to GitHub's servers, you must push the changes.
 
+For more info, see the official documentation from GitHub on how to make a commit using GitHub Desktop [here](https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/overview/creating-your-first-repository-using-github-desktop#part-5-making-committing-and-pushing-changes) and [here](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/committing-and-reviewing-changes-to-your-project).
+
 ## 1.7. Fetch, push and pull
 
 Since there are two copies of the repository that you're interacting with (the local copy and the remote copy on github.com), you need to make sure that your local updates are making it to the remote server, and you also need to make sure that you are receiving the updates from the remote server to your local copy of the repository. That's where fetch, push and pull come in. 
@@ -90,11 +100,15 @@ Pull is a the command you use to retrieve those changes from the remote server a
 
 [Push](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/pushing-changes-to-github#pushing-changes-to-github) is a command you use to send your changes from your local repository up to the GitHub servers.
 
+For more info on fetching and pulling, see the official documentation from GitHub [here](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/keeping-your-local-repository-in-sync-with-github/syncing-your-branch#pulling-to-your-local-branch-from-the-remote).
+
 ## 1.8. Browsing the commit history
 
 Every commit you make to your repository is adding to the history timeline of the repository. You can view this history directly in [GitHub Desktop](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/viewing-the-branch-history) or you can view it on github.com. Each item listed in the history is a commit that someone made to the repository, and will show you all the files changed due to that commit at that time. This gives you a nice way to view code changes you've made to any individual file, so you can always retrieve old versions of code if you need it.
 
 You can also revert commits from the history, to undo changes to the repository code, outlined [here](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/managing-commits/reverting-a-commit).
+
+For more info, see the official documentation from GitHub [here](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/viewing-the-branch-history).
 
 ## 1.9. Making and publishing branches
 
@@ -113,8 +127,6 @@ Just like when you commit code to your repository, creating a branch on your loc
 
 Once you've made a new branch, and added commits to it, you will eventually want to switch back to the main branch (or another feature branch). In order to switch branches, you can follow the steps outlined [here](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/managing-branches#switching-between-branches).
 
----
-
 # 2. Extra Items
 
 ## 2.1. Making commits directly on github.com
@@ -122,6 +134,8 @@ Once you've made a new branch, and added commits to it, you will eventually want
 You can make changes directly to your repository from the github.com website. This automatically makes changes to the remote copy of the repository, instead of your local copy. In order to see those changes on your computer, you will need to fetch and pull the changes down.
 
 Editing files on github.com is useful for small changes and updates, but is not as viable when you are trying to add multiple files or changes at once, especially in complex folder structures. That is a task better suited for being done locally on your computer and pushed to the GitHub serveers.
+
+For more info, see the official documentation from GitHub [here](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files).
 
 ## 2.2. Inviting people to collaborate
 
@@ -135,9 +149,12 @@ Sometimes there are files we don't want GitHub to track on the repository, such 
 
 We can do this by creating a `.gitignore` file. Once you create this text file, you can add file and folder names to it that you don't want to be added to your GitHub repository, even though they're in the folder that GitHub Desktop is watching for changes. You can fine more information on how to use the `.gitignore` file [here](https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files).
 
+
 ## 2.4. Repository settings
 
 Here they can change privacy levels, archive repository, delete repository, etc.
+
+For more info, see the official documentation from GitHub [here]().
 
 ## 2.5. Creating pull requests
 
@@ -145,25 +162,33 @@ Pull requests are ways you can create comparisons between branches
 - Show what a pull request is and how it works
 - potentially use this for assignments, where they submit pull requests (optional idea)
 
+For more info, see the official documentation from GitHub [here]().
+
 ## 2.6. Deployment
 
-- tbd
+- Pending my own notes. Until then, you can see the documentation directly from GitHub [here](https://docs.github.com/en/rest/deployments/deployments)
 
 ## 2.7. GitBash
 
-- tbd
 - `git clean -fdx` to clear out folders that don't belong anymore
+
+- Pending my own notes. Until then, you can see the documentation directly from GitHub [here](https://docs.github.com/en/rest/deployments/deployments)
 
 ## 2.8. Github and VSCode
 
-- tbd
+- Pending my own notes. Until then, you can see the documentation directly from GitHub [here](https://docs.github.com/en/rest/deployments/deployments)
 
 
-# Glossary of terms
+## 2.9. Cleaning out sensitive file data
 
-## Repository
+- Can be done using a tool found [here](https://github.com/rtyley/bfg-repo-cleaner)
+
+# 3. Glossary of terms
+
+## 3.1. Repository
 
 A repository is logical grouping of source code, usually centered around a specific project or solution. You can find more info [here](https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories)
 
-## Commit
+## 3.2. Commit
 
+- Pending my own notes. Until then, you can see the documentation directly from GitHub [here](https://docs.github.com/en/rest/deployments/deployments)
