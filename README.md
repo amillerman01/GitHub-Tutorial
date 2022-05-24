@@ -23,10 +23,11 @@ You will need an account on [GitHub](https://github.com) in order to participate
   - [2.3. .gitignore file](#23-gitignore-file)
   - [2.4. Repository settings](#24-repository-settings)
   - [2.5. Creating pull requests](#25-creating-pull-requests)
-  - [2.6. Deployment](#26-deployment)
-  - [2.7. GitBash](#27-gitbash)
-  - [2.8. Github and VSCode](#28-github-and-vscode)
-  - [2.9. Cleaning out sensitive file data](#29-cleaning-out-sensitive-file-data)
+  - [2.6. Forking](#26-forking)
+  - [2.7. Deployment](#27-deployment)
+  - [2.8. GitBash](#28-gitbash)
+  - [2.9. Github and VSCode](#29-github-and-vscode)
+  - [2.10. Cleaning out sensitive file data](#210-cleaning-out-sensitive-file-data)
 - [3. Glossary of terms](#3-glossary-of-terms)
   - [3.1. Repository](#31-repository)
   - [3.2. Commit](#32-commit)
@@ -164,22 +165,26 @@ Pull requests are ways you can create comparisons between branches
 
 For more info, see the official documentation from GitHub [here]().
 
-## 2.6. Deployment
+## 2.6. Forking
+
+- https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-repository
+
+## 2.7. Deployment
 
 - Pending my own notes. Until then, you can see the documentation directly from GitHub [here](https://docs.github.com/en/rest/deployments/deployments)
 
-## 2.7. GitBash
+## 2.8. GitBash
 
 - `git clean -fdx` to clear out folders that don't belong anymore
 
 - Pending my own notes. Until then, you can see the documentation directly from GitHub [here](https://docs.github.com/en/rest/deployments/deployments)
 
-## 2.8. Github and VSCode
+## 2.9. Github and VSCode
 
 - Pending my own notes. Until then, you can see the documentation directly from GitHub [here](https://docs.github.com/en/rest/deployments/deployments)
 
 
-## 2.9. Cleaning out sensitive file data
+## 2.10. Cleaning out sensitive file data
 
 - Can be done using a tool found [here](https://github.com/rtyley/bfg-repo-cleaner)
 
